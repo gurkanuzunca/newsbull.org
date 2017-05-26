@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <title>Newsbull Doc</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&amp;subset=latin-ext" />
+    <link rel="stylesheet" type="text/css" href="assets/compiled/compiled.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+
+    <script type="text/javascript" src="assets/compiled/compiled.js"></script>
+</head>
+<body>
+
+<header id="header">
+    <div class="body">
+        <div class="container">
+            <div class="logo">Newsbull</div>
+        </div>
+    </div>
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="./">Dökümantasyon</a></li>
+                <li>Kurulum</li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main id="main" class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="sidebar">
+                <h3>Dökümantasyon</h3>
+                <nav>
+                    <ul>
+                        <li><a href="./">Hakkında</a></li>
+                        <li class="active"><a href="kurulum.html">Kurulum</a></li>
+                        <li><a href="ozellikler.html">Özellikler</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="col-sm-9">
+            <div class="typography">
+                <h1 class="page-header">Kurulum</h1>
+                <h3>Gereksinimler</h3>
+                <ul>
+                    <li>PHP 5.4 ve üzeri.</li>
+                    <li>Apache 2 web sunucusu.</li>
+                    <li>PHP GD2 eklentisi.</li>
+                    <li>PHP Mysqli eklentisi.</li>
+                    <li>Apache Rewrite modülü.</li>
+                    <li>Mysql 5 / MariaDB veritabanı.</li>
+                </ul>
+
+                <h3>Composer ile Kurulum</h3>
+<pre>
+    <code data-language="html">composer create-project gurkanuzunca/newsbull dizinismi</code>
+</pre>
+                <p>
+                    Komutu ile kurulumu gerçekleştirebilirsiniz. Sisteminizde Composer kurulu değilse önce <a href="https://getcomposer.org/doc/00-intro.md#system-requirements" title=" Composer kurulumu" target="_blank">Composer kurulumunu</a> yapınız.
+                </p>
+
+                <h3>Manuel Kurulum</h3>
+                <p>
+                    Composer ile kurulumu gerçekleştirememeniz durumunda manuel olarak da kurulum yapabilirsiniz.<br>
+                    Kurulumu yapmak için;</p>
+                <ul>
+                    <li><a href="https://github.com/gurkanuzunca/newsbull" title="Newsbull Github" target="_blank">Newsbull Github</a> üzerinden güncel sürümü indirin. </li>
+                    <li>Zip dosyasından tüm dosyaları çıkarın.</li>
+                    <li><a href="https://github.com/gurkanuzunca/newsbull-vendor" title="Newsbull-vendor Github" target="_blank">Newsbull-vendor</a> paketini indirerek paketteki vendor dizinini Newsbull'u kurduğunuz dizine kopyalayın.</li>
+                </ul>
+
+                <h3>Son Adım</h3>
+                <p>
+                    Dosya kurulumunu tammalandıktan sonra veritabanı ayarlarını yapmanız gerekmektedir.
+                </p>
+                <p>
+                    Bilgisayarınızda çalışıyorsanız;<br>
+                    <mark>application/config/development/database.php</mark> dosyasındaki veritabanı bilgilerini güncelleyiniz.
+                </p>
+                <p>
+                    Dosyalarınızı sunucunuza yüklediyseniz;<br>
+                    <mark>application/config/production/database.php</mark> dosyasındaki veritabanı bilgilerini güncelleyiniz.
+                </p>
+                <p>
+                    Herşey tamamsa tarayıcınızdan Newsbull'u kurduğunuz adresi açarak kurulum sihirbazını çalıştırın. Sayfayı ilk açtığınızda sihirbaz otomatik olarak çalışacaktır. Açılan sayfadaki butona basarak son kalan veritabanı kurulum işlemini de tamamlayarak yazılımı kullanmaya başlayabilirsiniz.
+                </p>
+                <h3>İyide Panel Nerede?</h3>
+                <p>
+                    Kurulumu yaptıktan sonra kurulumu yaptığınız adresin soruna <mark>/panel</mark> ekini ekleyerek panel sayfasına erişebilirsiniz.
+                    Yetkili panel kullanıcı bilgileri;<br>
+                    Kullanıcı Adı: <strong>root</strong><br>
+                    Parola: <strong>root</strong><br>
+
+                </p>
+                <div class="alert alert-danger">
+                    Bu kullanıcı tüm yetkilere sahiptir ve yetkilendirme sisteminden muaftır. Sistemi kullanacak diğer panel kullanıcıları için özel yetkiler belirleyerek yeni kullanıcılar oluşturabilirsiniz.
+                </div>
+            </div>
+
+            <div class="buttons">
+                <a class="btn btn-default pull-left" href="./"><i class="fa fa-angle-double-left"></i>&nbsp; Hakkında</a>
+                <a class="btn btn-default pull-right" href="ozellikler.html">Özellikler &nbsp;<i class="fa fa-angle-double-right"></i></a>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

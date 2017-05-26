@@ -1,0 +1,41 @@
+body {font-family: "Source Sans Pro", Arial, sans-serif; color: #333; background-color: #fff;}
+a, a:hover, a:active, a:focus {text-decoration: none; outline: 0;}
+a {transition: 0.15s; color: #447bbe;}
+
+#header {margin-bottom: 30px;}
+#header .body {background-color: #447bbe; color: #fff; height: 100px;}
+#header .body .logo {margin: 0; padding: 0; line-height: 100px; font-size: 36px; font-weight: 700;}
+#header .breadcrumbs {padding: 20px 0; background-color: #f5f5f5; overflow: hidden;}
+#header .breadcrumbs ul {list-style: none; margin: 0; padding: 0;}
+#header .breadcrumbs ul li {color: #7c7c7c; float: left; position: relative;}
+#header .breadcrumbs ul li:after {color: #447bbe; content: '›'; margin: 0 10px;}
+#header .breadcrumbs ul li:last-child:after {display: none;}
+#header .breadcrumbs ul li a {color: #5c5c5c;}
+#header .breadcrumbs ul li a:hover {color: #447bbe;}
+
+#main {margin-bottom: 100px;}
+#main .sidebar {background-color: #f5f5f5; border-radius: 4px; padding: 20px;}
+#main .sidebar h3 {margin: 0 0 15px 0; padding: 0; color: #111; font-size: 16px; font-weight: 600;}
+#main .sidebar nav ul {list-style: none; margin: 0; padding: 0;}
+#main .sidebar nav ul li {margin-bottom: 5px;}
+#main .sidebar nav ul li a {display: block; color: #5c5c5c; padding: 10px; border-radius: 4px;}
+#main .sidebar nav ul li a:hover {background-color: #e9e9e9;}
+#main .sidebar nav ul li.active a {background-color: #447bbe; color: #fff;}
+
+#main .typography {font-size: 17px; line-height: 30px;}
+#main .typography strong {font-weight: 600;}
+#main .typography p {margin-bottom: 20px;}
+#main .typography ul {margin-bottom: 20px;}
+#main .typography h1,
+#main .typography h2,
+#main .typography h3,
+#main .typography h4,
+#main .typography h5,
+#main .typography h6 {margin: 30px 0 15px 0;}
+#main .typography .page-header {margin-top: 0;}
+#main .typography .page-header h1 {margin-top: 0;}
+#main .typography .alert {font-size: 15px; line-height: 22px;}
+
+#main .buttons {overflow: hidden;}
+
+pre {border-color: #eee; background-color: #f9f9f9;}
